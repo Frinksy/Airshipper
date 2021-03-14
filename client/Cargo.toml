@@ -21,11 +21,11 @@ bundled = ["openssl-sys"]
 
 [dependencies]
 # Cli
-clap = { git = "https://github.com/clap-rs/clap/", rev = "9163374", features = ["derive"] } 
+clap = { version = "3.0.0-beta.2", features = ["derive"] } 
 indicatif = "0.15.0"
 # UI
-iced = { git = "https://github.com/hecrj/iced.git", default-features = false, features = ["wgpu", "tokio", "image"], rev = "62295f5" }
-iced_native = { git = "https://github.com/hecrj/iced.git", default-features = false, rev = "62295f5" }
+iced = { version = "0.2", default-features = false, features = ["wgpu", "tokio_old", "image"] }
+iced_native = { version = "0.3", default-features = false }
 # Logging
 fern = { version = "0.6.0", features = ["colored"] }
 chrono = "0.4.19"
